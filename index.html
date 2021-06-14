@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Guess Game</title>
+</head> 
+<body onload="numGenerator()">
+    <div id="div1">
+         <h4>Number Guessing game</h4>
+         <p>Try and guess random number between 1 and 100</p>
+         <p>You have the 10 attempts to guess right number</p>
+         <div id="div2">
+             <h1>Guess a number</h1>
+             <input id="h" type="text">
+             <br>
+             <button id="btn" onclick="fun()">Submit guess</button>
+             <p id="p1">Previous guesses : <span id="s1"></span></p>
+             <p id="p2">Remaining guesses: <span id="s2"></span></p>
+             <h1 id="h2"></h1>
+             <button id="btn2" disabled onclick="numGenerator()">Start NEW GAME!</button>
+         </div>
+    </div>
+</body>
+</html>
